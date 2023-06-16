@@ -21,6 +21,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.1.0" rel="stylesheet" />
+  <link href="../assets/css/upload.css " rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
@@ -46,7 +48,7 @@
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
-        
+
         <li class="nav-item">
           <a class="nav-link text-white" href="upload.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -68,7 +70,7 @@
     <!-- End Navbar -->
     <div class="container-fluid py-4">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 text-center">
           <div class="card my-4">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
               <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
@@ -77,23 +79,44 @@
             </div>
             <div class="card-body px-0 pb-2">
               <div class="table-responsive p-0">
-
-           
+                <div class="form-container">
+                  <div class="upload-files-container">
+                    <div class="drag-file-area">
+                      <span class="material-icons-outlined upload-icon"> file_upload </span>
+                      <h3 class="dynamic-message"> Drag & drop any file here </h3>
+                      <label class="label"> or <span class="browse-files"> <input type="file"
+                            class="default-file-input" /> <span class="browse-files-text">browse file</span> <span>from
+                            device</span> </span> </label>
+                    </div>
+                    <span class="cannot-upload-message"> <span class="material-icons-outlined">error</span> Please
+                      select a file first <span class="material-icons-outlined cancel-alert-button">cancel</span>
+                    </span>
+                    <div class="file-block">
+                      <div class="file-info"> <span class="material-icons-outlined file-icon">description</span> <span
+                          class="file-name"> </span> | <span class="file-size"> </span> </div>
+                      <span class="material-icons remove-file-icon">delete</span>
+                      <div class="progress-bar"> </div>
+                    </div>
+                    <button type="button" class="upload-button"> Upload </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
 
-
-        <footer class="footer py-4  ">
-          <div>
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script> Urban Sports Center. All rights reserved.
-          </div>
-        </footer>
       </div>
+
+      <footer class="footer py-4  ">
+        <div>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear())
+          </script> Urban Sports Center. All rights reserved.
+        </div>
+      </footer>
+    </div>
   </main>
 
   <!--   Core JS Files   -->
@@ -101,6 +124,7 @@
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="../assets/js/upload.js"></script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
