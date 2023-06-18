@@ -1,0 +1,20 @@
+{
+  "name": "Personal Industry",
+  "short_name": "Personal Industry",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#7cb342",
+  "theme_color": "#20c997",
+  "icons": [
+        {
+            "src": "assets/img/s.png",
+            "sizes": "195x195",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/sa.png",
+            "sizes": "620x620",
+            "type": "image/png"
+        }
+  ]
+}
