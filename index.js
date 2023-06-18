@@ -9,4 +9,3 @@ if ("serviceWorker" in navigator) {
 } else {
     //The registration of the service worker failed
     console.log("Browser: I don't support Service Workers :(");
-}
